@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-05-06
+
+### Added
+- Lightweight particle/canvas background animation
+- Social icon float animation with hover ripple
+- Click-to-copy email shortcut with toast confirmation
+- External `styles.css` and `main.js` files (moved inline styles/scripts)
+
+### Changed
+- Updated site color palette to a dark-blue (60%) / cyan (30%) / orange (10%) scheme
+- Refactored inline CSS/JS into separate files and improved accessibility for motion preferences
+
 ## [0.1.0] - 2026-01-04
 
 ### Added
