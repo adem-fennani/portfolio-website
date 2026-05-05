@@ -6,6 +6,25 @@
     <title>Adem Fennani</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>😊</text></svg>">
     <style>
+        :root{
+            /* 60% primary (dark blue), 30% cyan accents, 10% orange accents */
+            --primary-1: #071433;
+            --primary-2: #0b2a4f;
+            --primary-3: #123a6a;
+
+            --accent-cyan: #00d1ff;
+            --accent-cyan-rgba: rgba(0, 209, 255, 0.18);
+            --accent-cyan-border: rgba(0, 209, 255, 0.36);
+
+            --accent-orange: #ff7a00;
+            --accent-orange-rgba: rgba(255, 122, 0, 0.15);
+            --accent-orange-border: rgba(255, 122, 0, 0.36);
+
+            --glass-bg: rgba(255, 255, 255, 0.06);
+            --glass-border: rgba(255, 255, 255, 0.14);
+            --muted: rgba(255,255,255,0.8);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -20,7 +39,7 @@
             justify-content: center;
             padding: 20px;
             overflow: hidden;
-            background: linear-gradient(-45deg, #0a192f, #112240, #1a365d, #0f2847);
+            background: linear-gradient(-45deg, var(--primary-1), var(--primary-2), var(--primary-3), var(--primary-2));
             background-size: 400% 400%;
             animation: gradientShift 15s ease infinite;
         }
@@ -49,21 +68,21 @@
         }
 
         .glass-card {
-            background: rgba(255, 255, 255, 0.08);
+            background: var(--glass-bg);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border-radius: 24px;
             padding: 60px 40px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
+            border: 1px solid var(--glass-border);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
 
         .badge {
             display: inline-block;
-            background: rgba(56, 189, 248, 0.2);
-            border: 1px solid rgba(56, 189, 248, 0.4);
-            color: #38bdf8;
+            background: var(--accent-cyan-rgba);
+            border: 1px solid var(--accent-cyan-border);
+            color: var(--accent-cyan);
             padding: 8px 20px;
             border-radius: 20px;
             font-size: 14px;
@@ -82,7 +101,7 @@
         .name {
             font-size: 3.5rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffc107 100%);
+            background: linear-gradient(135deg, var(--accent-orange) 0%, #ff9b43 50%, #ffb379 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -92,7 +111,7 @@
 
         .subtitle {
             font-size: 1.25rem;
-            color: rgba(255, 255, 255, 0.8);
+            color: var(--muted);
             margin-bottom: 20px;
             font-weight: 300;
             line-height: 1.6;
@@ -100,11 +119,11 @@
 
         .note {
             font-size: 1.1rem;
-            color: #fbbf24;
+            color: var(--accent-orange);
             margin-bottom: 40px;
             font-weight: 600;
-            background: rgba(251, 191, 36, 0.15);
-            border: 1px solid rgba(251, 191, 36, 0.4);
+            background: var(--accent-orange-rgba);
+            border: 1px solid var(--accent-orange-border);
             padding: 12px 24px;
             border-radius: 12px;
             display: inline-block;
@@ -123,8 +142,8 @@
             justify-content: center;
             width: 50px;
             height: 50px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--glass-border);
             border-radius: 12px;
             color: #ffffff;
             text-decoration: none;
@@ -134,10 +153,10 @@
         }
 
         .social-link:hover {
-            background: rgba(56, 189, 248, 0.2);
-            border-color: rgba(56, 189, 248, 0.4);
+            background: var(--accent-cyan-rgba);
+            border-color: var(--accent-cyan-border);
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(56, 189, 248, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 209, 255, 0.18);
         }
 
         .footer {
@@ -198,7 +217,7 @@
                 Cloud Computing Specialist
             </p>
             
-            <p class="note">This website is under development</p>
+            <p class="note">This website is coming live very soon...</p>
             
             <div class="social-links">
                 <a href="https://github.com/adem-fennani" class="social-link" target="_blank" title="GitHub">
