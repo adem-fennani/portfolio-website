@@ -1,16 +1,20 @@
 # Adem Fennani - Portfolio
 
-Personal portfolio website showcasing my projects and skills as an IT Engineering student specializing in Cloud Computing.
+Personal portfolio website showcasing my projects and skills as an IT Engineering student specializing in Cloud Computing, AI and Automation.
 
-## 🚀 Current Status
+## 🚀 Features
 
-This website is currently under development. A "Coming Soon" page is live while the full portfolio is being built.
+- Modern **glassmorphism** design system with responsive CSS grid layout.
+- Interactive **canvas background animation**.
+- Detailed **Projects Section** highlighting Machine Learning, Custom Cloud Infrastructure (OpenStack/Kubernetes), and Full-Stack development.
+- Categorized **Tech Stack** section with dynamic neon-glass highlights for core competencies.
+- Automated CI/CD pipeline via GitHub Actions.
 
-## 🛠️ Tech Stack
+## 🛠️ Built With
 
 - HTML5
 - CSS3
-- JavaScript
+- Vanilla JavaScript
 
 ## 📫 Connect With Me
 

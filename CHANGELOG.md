@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-05-28
+
+### Added
+- "Grinta" full-stack angular/spring boot project to the portfolio.
+- "Private Cloud & Kubernetes" OpenStack and Ansible project card.
+- SVG icons for GitHub, LinkedIn, and Live Demo project links.
+- GitHub Actions deployment workflow (`deploy.yml`).
+
+### Changed
+- Completely revamped the "Languages and Tools" section, separating skills into specific categories (Programming Languages, Backend, Frontend, Databases, DevOps & Infrastructure).
+- Applied custom neon glassmorphism highlights for core competencies.
+- Enriched project descriptions, skills tags, and added direct external links.
+
 ## [0.2.0] - 2026-05-06
 
 ### Added
