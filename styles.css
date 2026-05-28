@@ -472,6 +472,20 @@ body {
     transform: translateY(-2px);
 }
 
+.btn-linkedin {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    color: #ffffff;
+}
+
+.btn-linkedin:hover {
+    background: rgba(0, 119, 181, 0.2);
+    border-color: rgba(0, 119, 181, 0.5);
+    color: #40c4ff; /* lighter blue that fits the dark theme */
+    transform: translateY(-2px);
+}
+
 /* Experience & Education */
 .timeline {
     position: relative;
