@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-06-02
+
+### Added
+- **Download CV** button in the hero, serving `assets/cv.pdf` with a download icon.
+- Two-column hero layout: bio column with CTAs and stats row, plus an interactive profile card with layered glow effects and floating badges.
+- "Open to Opportunities" status badge with animated pulse indicator.
+- Decorative ambient background glow blobs behind the hero.
+- **Outfit** and **JetBrains Mono** typography via Google Fonts.
+- Pointer-tracking border glow on profile, skill category, and project cards (respects `prefers-reduced-motion`).
+- Per-category skill tag colors (programming, backend, frontend, database, DevOps) replacing individual neon highlights.
+- GitHub repository link for the Grinta project.
+
+### Changed
+- Complete visual redesign: light theme with premium cyan and sunset orange accents, replacing the previous dark blue palette.
+- Revamped hero section from a single glass card to a split layout with staggered fade-up animations.
+- Relocated social links beneath the profile card; updated favicon to a developer emoji.
+- Enriched hero copy, statistics row ("3+ Years Coding", "10+ Projects", "Cloud Enthusiast"), and primary CTAs ("View Projects", "Download CV").
+- Skill label corrections (`Next.js`, `OpenStack`) and `rel="noopener noreferrer"` on external project links.
+
 ## [0.3.0] - 2026-05-28
 
 ### Added

@@ -122,4 +122,33 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
   });
 
+  /* --- Pointer-tracking border glow on cards --- */
+  const glowCards = document.querySelectorAll(
+    '.profile-card, .glass-card, .skill-category, .project-card'
+  );
+
+  glowCards.forEach((card) => {
+    card.classList.add('glow-border');
+
+    if (prefersReduced) return;
+
+    const setGlowPosition = (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty('--glow-x', `${x}%`);
+      card.style.setProperty('--glow-y', `${y}%`);
+    };
+
+    card.addEventListener('mouseenter', () => {
+      card.classList.add('is-glowing');
+    });
+
+    card.addEventListener('mousemove', setGlowPosition);
+
+    card.addEventListener('mouseleave', () => {
+      card.classList.remove('is-glowing');
+    });
+  });
+
 });
