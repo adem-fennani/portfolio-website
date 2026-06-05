@@ -1146,3 +1146,7 @@ body {
         font-size: 0.9rem;
     }
 }
+
+.hidden-project {
+    display: none !important;
+}

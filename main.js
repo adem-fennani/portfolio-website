@@ -151,4 +151,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* --- See more / See less projects buttons --- */
+  const seeMoreBtn = document.getElementById('see-more-btn');
+  const seeLessBtn = document.getElementById('see-less-btn');
+  
+  if (seeMoreBtn && seeLessBtn) {
+    seeMoreBtn.addEventListener('click', () => {
+      document.querySelectorAll('.extra-project').forEach(el => {
+        el.classList.remove('hidden-project');
+      });
+      seeMoreBtn.style.display = 'none';
+      seeLessBtn.style.display = 'inline-flex';
+    });
+
+    seeLessBtn.addEventListener('click', () => {
+      document.querySelectorAll('.extra-project').forEach(el => {
+        el.classList.add('hidden-project');
+      });
+      seeLessBtn.style.display = 'none';
+      seeMoreBtn.style.display = 'inline-flex';
+      
+      const projectsSection = document.getElementById('projects');
+      if (projectsSection) {
+        const offset = projectsSection.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+      }
+    });
+  }
+
 });
