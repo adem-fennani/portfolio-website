@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-06-05
+
+### Added
+- **Education Section**: Added a new section highlighting the engineering degree at ESPRIT School of Engineering.
+- **Projects**: Added the Recynexxus project card.
+- **Projects**: Added the Evencia project cards (Desktop and Web).
+
 ## [0.4.0] - 2026-06-02
 
 ### Added
