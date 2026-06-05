@@ -1150,3 +1150,116 @@ body {
 .hidden-project {
     display: none !important;
 }
+
+/* Education Section */
+.education-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.35s ease;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px -12px rgba(0, 209, 255, 0.12), 0 8px 24px -8px rgba(124, 92, 255, 0.1);
+}
+
+.education-img-header {
+    position: relative;
+    height: 240px;
+    width: 100%;
+}
+
+.education-img-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.education-img-header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.9) 100%);
+    z-index: 1;
+}
+
+.education-img-header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 32px;
+    width: 50px;
+    height: 3px;
+    background: var(--accent-cyan);
+    z-index: 2;
+}
+
+.education-badges {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.edu-badge-left, .edu-badge-right {
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: var(--glass-shadow);
+}
+
+.edu-badge-right {
+    text-transform: none;
+    letter-spacing: 0.02em;
+    color: var(--orange-accent);
+    border-color: var(--orange-accent-border);
+}
+
+.education-content {
+    background: transparent;
+    padding: 20px 32px 32px 32px;
+    color: var(--text-primary);
+    position: relative;
+    z-index: 2;
+}
+
+.education-content h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--accent-cyan);
+}
+
+.edu-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    margin-bottom: 24px;
+}
+
+.edu-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
