@@ -711,6 +711,28 @@ body {
     color: var(--text-muted);
 }
 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 15px;
+}
+
+.footer-link:hover {
+    color: var(--orange-accent);
+}
+
 @media (max-width: 768px) {
     .glass-card {
         padding: 40px 30px;
